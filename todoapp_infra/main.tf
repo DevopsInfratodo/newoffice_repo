@@ -14,7 +14,7 @@ module "resource_group" {
 
 module "resource_group2" {
   source = "../modules/azurerm_resource_group"
-  resource_group_name = "rg-101-india"
+  resource_group_name = "rg-india1"
   resource_group_location = "Australia East"
 }
 
