@@ -12,6 +12,12 @@ module "resource_group" {
   resource_group_location = "Australia East"
 }
 
+module "resource_group2" {
+  source = "../modules/azurerm_resource_group"
+  resource_group_name = "rg-101-india"
+  resource_group_location = "Australia East"
+}
+
 module "virtual_network" {
     depends_on = [module.resource_group]
   source = "../modules/azurerm_virtual_network"
